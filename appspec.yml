@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 
 files:
-  - source: /*.zip
-    destination: /home/ec2-user
+  - source: /*.jar
+    destination: /home/ec2-user/server
 
 permissions:
   - object: /
