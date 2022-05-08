@@ -2,17 +2,17 @@ version: 0.0
 os: linux
 
 files:
-  - source: /*.*
+  - source: /
     destination: /home/ec2-user/server
 
 hooks:
   BeforeInstall:
     - location: server_clear.sh
-      timeout: 120
+      timeout: 30
       runas: root
   AfterInstall:
     - location: fix_privileges.sh
-      timeout: 120
+      timeout: 30
       runas: root
   ApplicationStart:
     - location: server_start.sh
