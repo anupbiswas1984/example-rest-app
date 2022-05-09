@@ -17,6 +17,6 @@ public class ExampleControllers {
 	@GetMapping({ "/", "/health" })
 	public ResponseEntity<String> healthCheck() {
 		String hostname = service.getHostName();
-		return new ResponseEntity<String>("Application v5 Is Running from "+ hostname , HttpStatus.OK);
+		return new ResponseEntity<String>("Application v6 Is Running from "+ hostname , HttpStatus.OK);
 	}
 }
